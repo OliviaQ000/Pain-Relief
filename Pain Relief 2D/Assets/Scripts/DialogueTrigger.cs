@@ -10,6 +10,8 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (dialogues.Count == 0) return;
 
+        Debug.Log("Button clicked, triggering dialogue...");
+
         //play current dialogue
         FindObjectOfType<DialogueManager>().StartDialogue(dialogues[currentIndex]);
 
