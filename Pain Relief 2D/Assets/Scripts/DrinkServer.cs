@@ -31,7 +31,7 @@ public class DrinkServer : MonoBehaviour
         {
             // ---------- HE ----------
             case "Milk_Sleepy_Painkiller":
-            case "Milk_Sleepy_VitaminC":
+            case "Milk_Sleepy_Vitamin C":
             case "Coffee_Sleepy_Melatonin":
             case "Tea_Sleepy_Melatonin":
                 ending_HE.SetActive(true);
@@ -40,7 +40,7 @@ public class DrinkServer : MonoBehaviour
 
             // ---------- NE1 ----------
             case "Milk_Excited_Painkiller":
-            case "Milk_Excited_VitaminC":
+            case "Milk_Excited_Vitamin C":
             case "Coffee_Excited_Melatonin":
             case "Tea_Excited_Melatonin":
                 ending_NE1.SetActive(true);
@@ -50,9 +50,9 @@ public class DrinkServer : MonoBehaviour
             // ---------- NE2 ----------
             case "Milk_Excited_Melatonin":
             case "Coffee_Sleepy_Painkiller":
-            case "Coffee_Sleepy_VitaminC":
+            case "Coffee_Sleepy_Vitamin C":
             case "Tea_Sleepy_Painkiller":
-            case "Tea_Sleepy_VitaminC":
+            case "Tea_Sleepy_Vitamin C":
                 ending_NE2.SetActive(true);
                 Debug.Log("End: NE2");
                 break;
@@ -65,9 +65,9 @@ public class DrinkServer : MonoBehaviour
 
             // ---------- BE2 ----------
             case "Coffee_Excited_Painkiller":
-            case "Coffee_Excited_VitaminC":
+            case "Coffee_Excited_Vitamin C":
             case "Tea_Excited_Painkiller":
-            case "Tea_Excited_VitaminC":
+            case "Tea_Excited_Vitamin C":
                 ending_BE2.SetActive(true);
                 Debug.Log("End: BE2");
                 break;
