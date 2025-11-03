@@ -6,7 +6,8 @@ public class DrinkServer : MonoBehaviour
     public GameObject ending_NE1; 
     public GameObject ending_NE2;     
     public GameObject ending_BE1; 
-    public GameObject ending_BE2;    
+    public GameObject ending_BE2; 
+    public GameObject ending_null;   
 
     public void OnServe()
     {
@@ -16,6 +17,7 @@ public class DrinkServer : MonoBehaviour
 
         if (selectedBase == null || selectedEmotion == null || selectedMedicine == null)
         {
+            ending_null.SetActive(true);
             Debug.Log("Please make sure you choose from each category.");
             return;
         }
