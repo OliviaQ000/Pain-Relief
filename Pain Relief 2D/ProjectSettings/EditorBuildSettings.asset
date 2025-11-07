@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/01_ChatMenu.unity
     guid: 68aee477131c1b040a82cfea22e7a598
+  - enabled: 1
+    path: Assets/Scenes/02_HE.unity
+    guid: b945165ace40eaf4f8f96c846de639a4
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
