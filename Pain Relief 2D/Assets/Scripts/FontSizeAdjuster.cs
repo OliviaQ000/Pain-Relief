@@ -6,6 +6,7 @@ public class FontSizeAdjuster : MonoBehaviour
 {
     public Scrollbar fontSizeScrollbar; // Connect in inspector
     public TMP_Text dialogueText;
+    public TMP_Text sampleText;
     public float minFontSize = 16f;
     public float maxFontSize = 40f;
 
@@ -20,5 +21,6 @@ public class FontSizeAdjuster : MonoBehaviour
     void OnFontSizeChanged(float value)
     {
         dialogueText.fontSize = Mathf.Lerp(minFontSize, maxFontSize, value);
+        sampleText.fontSize = Mathf.Lerp(minFontSize, maxFontSize, value);
     }
 }
