@@ -1,7 +1,8 @@
 using UnityEngine;
 
 public class DrinkServer : MonoBehaviour
-{
+{   
+    //UI panels for each ending
     public GameObject ending_HE;   
     public GameObject ending_NE1; 
     public GameObject ending_NE2;     
@@ -9,26 +10,26 @@ public class DrinkServer : MonoBehaviour
     public GameObject ending_BE2; 
     public GameObject ending_null;   
 
-    public void OnServe()
+    public void OnServe() //when player clicks "serve" button
     {
         GameObject selectedBase = GetSelected("Base");
         GameObject selectedEmotion = GetSelected("Emotion");
         GameObject selectedMedicine = GetSelected("Medicine");
 
-        if (selectedBase == null || selectedEmotion == null || selectedMedicine == null)
+        if (selectedBase == null || selectedEmotion == null || selectedMedicine == null) // if any of those three types of material is not selected
         {
-            ending_null.SetActive(true);
+            ending_null.SetActive(true);//show null ending
             Debug.Log("Please make sure you choose from each category.");
-            return;
+            return;//stop the function
         }
 
-        // combine the button selected to form unique identifier for the combo
+        //combine the button selected to form unique identifier for the combo
         string combo = $"{selectedBase.name}_{selectedEmotion.name}_{selectedMedicine.name}";
         Debug.Log("Combination result" + combo);
 
-        HideAllEndings();
+        HideAllEndings();//hide all endings first
 
-        // go to different endings according to different combination
+        //go to different endings according to different combination
         switch (combo)
         {
             // ---------- HE ----------
@@ -76,25 +77,25 @@ public class DrinkServer : MonoBehaviour
 
             // ---------- Unknown ----------
             default:
-                Debug.Log("Unknown combo. No ending found.");
+                Debug.Log("Unknown combo. No ending found.");//if nothing matches, show this
                 break;
         }
     }
 
-    // find the currently selected button in a category (according to tag)
+    //find the currently selected button in a category (according to tag)
     private GameObject GetSelected(string tag)
     {
-        GameObject[] buttons = GameObject.FindGameObjectsWithTag(tag);// Find all buttons that share the same tag 
+        GameObject[] buttons = GameObject.FindGameObjectsWithTag(tag);//Find all buttons that share the same tag 
         foreach (GameObject obj in buttons)//loop through each button
         {
-            DrinkButton btn = obj.GetComponent<DrinkButton>(); // Get the DrinkButton component from this object
-            if (btn.isSelected) // If this button's isSelected = true, return it as the selected one
+            DrinkButton btn = obj.GetComponent<DrinkButton>(); //Get the DrinkButton component from this object
+            if (btn.isSelected) //if this button isSelected = true, return it as the selected one
                 return obj;
         }
-        return null; // If no button in this category is selected, return null
+        return null; //if no button in this category is selected, return null
     }
 
-// Disable all ending panels before showing the correct one
+//Disable all ending panels before showing the correct one
      private void HideAllEndings()
     {
         ending_HE.SetActive(false);

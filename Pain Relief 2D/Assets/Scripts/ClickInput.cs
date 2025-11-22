@@ -39,13 +39,13 @@ public class ClickInput : MonoBehaviour
         }
     }
 
-    void OnClick()
+    void OnClick() //this runs when right click happens during dialogue
     {
         Debug.Log("Clicked while dialogue panel is active!");
         canvas_environment.SetActive(true);
     }
 
-    void HEOnClick()
+    void HEOnClick() //this runs when left clicks happens in HappyEnding panel
     {
         if (heStage == 0)
         {

@@ -1,18 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
+using System.Collections; //using Coroutines
+using System.Collections.Generic;//needed for Queue, List, Dictionary
 using UnityEngine;
 using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
 
-    public TMP_Text nameText;     
+    public TMP_Text nameText; 
     public TMP_Text dialogueText; 
 
-    public Animator animator;
+    public Animator animator; //open and close dialogue window 
 
-    [Header("Typing Settings")]
-    public float typingSpeed = 0.03f;
+    [Header("Typing Settings")] //create a section in inspector
+    public float typingSpeed = 0.03f;//how fast each letter appears
 
     //Queue: FIFO(first in first out) collection
     private Queue<string> sentences; //Put all the sentences that want to display in this queue, when player read through the dialogue, will load new sentences from the end of the queue.
@@ -27,15 +27,15 @@ public class DialogueManager : MonoBehaviour
     {
         Debug.Log("Starting dialogue with: " + dialogue.name);
 
-        animator.SetBool("IsOpen", true);
+        animator.SetBool("IsOpen", true);//let animator play open animation
 
-        nameText.text = dialogue.name;
+        nameText.text = dialogue.name;//show the NPC name
 
         sentences.Clear(); //clear all sentences from previous conversation 
 
-        foreach (string sentence in dialogue.sentences) //go through all the strings and add them to queue
+        foreach (string sentence in dialogue.sentences) //go through all the strings
         {
-            sentences.Enqueue(sentence);
+            sentences.Enqueue(sentence);//Enqueue() = puts each sentence into the queue in order
         }
 
         DisplayNextSentence();
@@ -50,16 +50,16 @@ public class DialogueManager : MonoBehaviour
         return;
        }
 
-        string sentence = sentences.Dequeue();
-        StopAllCoroutines(); //if type sentence is already running, it will stop and begin a new one
+        string sentence = sentences.Dequeue();//Dequeue() = take the first sentence out of the queue (play the next sentence)
+        StopAllCoroutines(); //if type sentence is already running, it will stop and begin a new one (avoid overlapping)
         StartCoroutine(TypeSentence(sentence));
     }
 
     IEnumerator TypeSentence (string sentence)
     {
-        //look through all individual characters in sentence.
+        //clear the text first
         dialogueText.text = "";
-        foreach (char letter in sentence.ToCharArray())
+        foreach (char letter in sentence.ToCharArray())//look through all individual characters in sentence.
         {
             dialogueText.text +=  letter; //append letter to end of the string
             yield return new WaitForSeconds(typingSpeed);
@@ -68,6 +68,6 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
-        animator.SetBool("IsOpen", false);
+        animator.SetBool("IsOpen", false);//let animator play close animation
     }
 }
