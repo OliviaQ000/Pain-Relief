@@ -15,7 +15,7 @@ public class DialogueManager : MonoBehaviour
     public float typingSpeed = 0.03f;//how fast each letter appears
 
     //Queue: FIFO(first in first out) collection
-    private Queue<string> sentences; //Put all the sentences that want to display in this queue, when player read through the dialogue, will load new sentences from the end of the queue.
+    private Queue<string> sentences; //Put all the sentences that want to display in this queue, when player read through the dialogue, will load new sentences from the end of the queue
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

@@ -10,7 +10,7 @@ public class Sound : MonoBehaviour
     {
         if(index >= 0 && index < sfxClip.Length)//the index must be 0 or bigger and must be smaller than the number of sound clips
         {
-            sfxSource.PlayOneShot(sfxClip[index]);//PlayOneShot() = plays a sound once, it doesn't interruot other sounds
+            sfxSource.PlayOneShot(sfxClip[index]);//PlayOneShot() = plays a sound once, it doesn't interrupt other sounds
         }
         else
         {

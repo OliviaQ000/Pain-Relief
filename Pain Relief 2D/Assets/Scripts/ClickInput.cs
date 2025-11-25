@@ -11,7 +11,7 @@ public class ClickInput : MonoBehaviour
     public GameObject Cg_HE_Hello;//heStage = 3
     public GameObject Ending_HE; // The UI panel to check if is active
 
-    public GameObject Button_HE;// button tranfer to HE scene
+    public GameObject Button_HE;// button tranfer to HE scene 
 
     private int heStage = 0; // "0" means not started yet
 
