@@ -8019,7 +8019,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 4096
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -14490,17 +14490,17 @@ MonoBehaviour:
 
 
     Normal
-    Ending1-Nowan feel a bit excited
+    Ending 1 - Nowan feels a bit excited
 
 
-    Bad Ending1-Nowan can''t wake up
+    Bad Ending 1 - Nowan can''t wake up
 
     Bad
-    Ending2-Nowan could no longer fall asleep
+    Ending 2 - Nowan could no longer fall asleep
 
 
-    Happy Ending-A nice sleep and
-    new day begin'
+    Happy Ending - A nice sleep
+    and new day begins'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -17065,19 +17065,19 @@ MonoBehaviour:
 
 
     Normal
-    Ending1-Nowan feel a bit excited
+    Ending 1 - Nowan feels a bit excited
 
-    Normal Ending2-The feeling of Nowan unchanged
-
-
-    Bad
-    Ending1-Nowan can''t wake up
-
-    Bad Ending2-Nowan could no longer fall asleep
+    Normal Ending 2 - The feeling of Nowan
+    unchanged
 
 
-    Happy
-    Ending-A nice sleep and new day begin'
+    Bad Ending 1 - Nowan can''t wake up
+
+    Bad Ending 2 - Nowan
+    could no longer fall asleep
+
+
+    Happy Ending - A nice sleep and new day begins'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -18703,17 +18703,17 @@ MonoBehaviour:
 
 
     Normal
-    Ending1-Nowan feel a bit excited
+    Ending 1 - Nowan feel a bit excited
 
-    Normal Ending2-The feeling of Nowan unchanged
-
-
-    Bad
-    Ending2-Nowan could no longer fall asleep
+    Normal Ending 2 - The feeling of Nowan
+    unchanged
 
 
-    Happy Ending-A nice sleep and
-    new day begin'
+    Bad Ending 2 - Nowan could no longer fall asleep
+
+
+    Happy
+    Ending - A nice sleep and new day begins'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -21460,17 +21460,17 @@ MonoBehaviour:
 
 
     Normal
-    Ending2-The feeling of Nowan unchanged
+    Ending 2 - The feeling of Nowan unchanged
 
 
-    Bad Ending1-Nowan can''t wake up
+    Bad Ending 1 - Nowan can''t wake
+    up
 
-    Bad
-    Ending2-Nowan could no longer fall asleep
+    Bad Ending 2 - Nowan could no longer fall asleep
 
 
-    Happy Ending-A nice sleep and
-    new day begin'
+    Happy Ending -
+    A nice sleep and new day begins'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -23347,7 +23347,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 4096
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -24257,7 +24257,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 4096
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0

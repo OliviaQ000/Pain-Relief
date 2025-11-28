@@ -46,8 +46,8 @@ public class DialogueManager : MonoBehaviour
        //check if theres more sentences in the queue
        if (sentences.Count == 0) 
        {
-        EndDialogue();
-        return;
+            EndDialogue();
+            return;
        }
 
         string sentence = sentences.Dequeue();//Dequeue() = take the first sentence out of the queue (play the next sentence)

@@ -395,7 +395,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 4096
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3972,15 +3972,17 @@ MonoBehaviour:
 
 
     Normal
-    Ending1-Nowan feel a bit excited
+    Ending 1 - Nowan feels a bit excited
 
-    Normal Ending2-The feeling of Nowan unchanged
+    Normal Ending 2 - The feeling of Nowan
+    unchanged
 
 
-    Bad
-    Ending1-Nowan can''t wake up
+    Bad Ending 1 - Nowan can''t wake up
 
-    Bad Ending2-Nowan could no longer fall asleep
+    Bad Ending 2 - Nowan
+    could no longer fall asleep
+
 
 '
   m_isRightToLeft: 0
