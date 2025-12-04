@@ -79,4 +79,14 @@ public class ClickInput : MonoBehaviour
             heStage = 4;
        }
     }
+
+    // Reset all the value when game is restarted (ResetScene.cs)
+    public void ResetStage()
+    {
+        heStage = 0;
+        Cg_HE_Knockdoor.SetActive(false);
+        Cg_HE_Enter.SetActive(false);
+        Cg_HE_Hello.SetActive(false);
+        Button_HE.SetActive(false);
+    }
 }

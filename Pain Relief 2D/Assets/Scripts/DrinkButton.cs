@@ -38,5 +38,10 @@ public class DrinkButton : MonoBehaviour
         if (image != null)
             image.color = normalColor;
     }
+
+    public void ResetSelected()
+    {
+        isSelected = false;
+    }
 }
 

@@ -22,4 +22,10 @@ public class DialogueTrigger : MonoBehaviour
         }
         // if played all dialogue, keep playing the last one
     }
+
+    public void ResetDialogue()
+    {
+        currentIndex = 0;
+        TriggerDialogue();
+    }
 }
